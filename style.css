@@ -1,0 +1,364 @@
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    color: black;
+}
+
+/*header*/
+header
+{
+    background: #000000;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+}
+
+.logo
+{
+    max-width: 150px;
+    background-color: #ffffff;
+    border-radius: 56%;
+}
+
+nav ul
+{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+nav ul li
+{
+    margin: 0;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav ul li a:hover
+{
+    color: #ffffff;
+    background-color: hwb(0 37% 63% / 0.877);
+    transform: scale(1.1,1.1);
+}
+
+/*Home*/
+section#about
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    background: #f9f9f9;
+}
+
+.intro
+{
+    max-width: 600px;
+}
+
+.intro h1
+{
+    font-size: 2.5rem;
+}
+
+.intro p
+{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.buttons
+{
+    margin-top: 1rem;
+}
+
+.buttons .btn
+{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    background: cadetblue;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buttons .btn:hover
+{
+    background: #867fa8;
+    transform: scale(1.1,1.1);
+    text-underline-offset: 2;
+}
+
+.myself img
+{
+    border-radius: 45%;
+    width: 300px;
+    height: 400px;
+}
+
+/*me*/
+#hire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.meetme {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.meetme img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.myname {
+    flex: 2;
+    padding: 20px;
+}
+
+.myname h2 {
+    margin-top: 0;
+}
+
+.myname p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.hire-me {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    background: cadetblue;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.hire-me:hover {
+    background: #867fa8;
+    transform: scale(1.1,1.1);
+}
+
+@media (max-width: 768px) {
+    #hire {
+        flex-direction: column;
+    }
+    
+    .meetme, .myname {
+        padding: 10px;
+    }
+}
+
+/*Certifications*/
+.certified {
+    width: 100%;
+}
+
+.certificates-flex {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.certificate {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-width: 300px;
+    flex: 0 0 auto;
+}
+
+.certificate img {
+    border-radius: 10px;
+}
+
+.certificate h3 {
+    margin-top: 10px;
+}
+
+.certificate p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/*skilled*/
+#skilled {
+    padding: 40px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.vish, .improve {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.vish h2, .improve h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.vish ul, .improve ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vish li, .improve li {
+    margin-bottom: 20px;
+}
+
+.vish h3, .improve h3 {
+    margin: 0 0 5px 0;
+}
+
+.skill-bar {
+    height: 20px;
+    background-color: #867fa8;
+    border-radius: 10px;
+    transition: width 0.3s;
+}
+
+@media (max-width: 768px) {
+    .container.skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vish, .improve {
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+/*projects*/
+.projects {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+}
+
+.projects h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.projects-flex {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-width: 300px;
+    flex: 0 0 auto;
+}
+
+.project img {
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin-top: 10px;
+}
+
+.project p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* contact*/
+.contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.contact ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* footer*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0px;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
